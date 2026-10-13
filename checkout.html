@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Checkout relies on native browser validation without scripts. -->
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width,initial-scale=1">
+         <title>Checkout | Kampala Fresh Produce Direct</title>
+         <link rel="stylesheet" href="style.css">
+        </head>
+<body>
+    <div class="topbar">
+        <div class="container topbar-inner">
+            <span>Delivery details</span>
+            <span>For the sample order</span>
+        </div>
+    </div>
+    <header>
+        <nav class="container nav-wrap" aria-label="Main navigation">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">🌿</span>
+                <span class="brand-name">Kampala Fresh Produce<small>DIRECT FROM FARMERS</small></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="tracking.html">Track order</a></li>
+                <li><a class="shop-link" href="basket.html">Basket</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">One more step</span>
+            <h1>Delivery details</h1>
+            <p>Enter contact and location details for this sample order.</p>
+        </div>
+    </section>
+    <section>
+        <div class="container grid-2">
+            <div>
+                <h2>Customer information</h2>
+                <p class="form-note">Your browser checks required fields and phone number format. This sample form does not send your details.</p>
+                <form action="confirmation.html" method="get">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="customer-name">Full name *</label>
+                            <input class="field" id="customer-name" name="name" required minlength="2" autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-phone">Phone number *</label>
+                            <input class="field" id="customer-phone" name="phone" type="tel" required pattern="(?:\+256|0)[0-9]{9}" placeholder="07XXXXXXXX or +2567XXXXXXXX" title="Enter a Ugandan number starting 07 or +2567">
+                        </div>
+                        <div class="form-group full">
+                            <label for="customer-address">Delivery address / area *</label>
+                            <input class="field" id="customer-address" name="address" required minlength="5" placeholder="E.g. Bukoto, near the market">
+                        </div>
+                        <div class="form-group full">
+                            <label for="customer-notes">Delivery notes</label>
+                            <textarea class="field" id="customer-notes" name="notes" rows="3" placeholder="Landmarks or preferred delivery instructions"></textarea>
+                        </div>
+                    </div>
+                    <button class="btn" type="submit">Continue to confirmation →</button>
+                </form>
+            </div>
+            <aside class="summary">
+                <h2>Sample order summary</h2>
+                <div class="summary-line">
+                    <span>Fresh Tomatoes × 2</span>
+                    <strong>UGX 8,000</strong>
+                </div>
+                <div class="summary-line">
+                    <span>Red Onions × 1</span>
+                    <strong>UGX 5,000</strong>
+                </div>
+                <div class="summary-line">
+                    <strong>Sample total</strong>
+                    <strong>UGX 13,000</strong>
+                </div>
+                <p class="small">Static example only.</p>
+                <a href="basket.html">Edit sample basket</a>
+            </aside>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h3>Kampala Fresh Produce Direct</h3>
+                <p>Fresh Ugandan produce, direct from our farmer members.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="products.html">Our produce</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+256703897374">+256703897374</a></li>
+                    <li><a href="mailto:nsabel143@gmail.com">nsabel143@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2026 Kampala Fresh Produce Direct</p>
+    </div>
+</footer>
+</body>
+</html>
+
